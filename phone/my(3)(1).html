@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的</title>
+		<style type="text/css">/*  "*" 通配符 代表当前页面所有元素*/
+			*{	margin: 0;	padding: 0;	}
+			a{	text-decoration: none;	}
+		.content{
+			width: 400px;height: 700px;	background-color: #EEEEEE;margin:0 auto;
+		}
+		.top{height: 30px;background-color:#EA433D;text-align: right;	}
+		.top a{
+			display: inline-block;
+			color: white;
+			font-family: "微软雅黑";
+			margin-top: 8px;
+			margin-right: 8px;	
+		}
+		.div1{
+			height: 190px;
+			background-color:#EA433D;
+			text-align: center;
+		}
+		.div1 a{
+			color: white;
+			font-size: 22px;
+			display: block;
+		}
+		.div1 strong span{
+			font-size: large;
+			font-family: "微软雅黑";
+		}
+		.nav{
+			height: 70px;
+			background-color:#FEFEFE;
+			text-align: center;
+		}
+		.nav ul li {
+			display: inline-block;
+			width: 80px;
+			height: 70px;
+
+		}
+		.nav ul li a img{
+			width:25px;
+			height: 25px;
+			display: block;
+			margin: 0 auto;
+			margin-top: 10px;
+			
+		}
+		.nav ul li a {color: grey;}
+		.list-btn{	height: 350px;}
+		.list-btn ul li {
+			background-color: white;
+			/*去掉li前面小符号*/
+			list-style-type: none;
+			height: 52px;
+			/*底部边框*/
+			border-bottom: 1px solid  gainsboro;
+			line-height: 52px;
+		}
+		.list-btn ul li a{
+			color: black;
+			font-family: "微软雅黑";
+			color:grey;
+		}
+		.list-btn ul li a img{
+			width: 20px;
+			height: 20px;
+			vertical-align:middle;
+			margin-left: 30px;
+			margin-right: 15px;
+			
+		}
+		.list-btn ul li a  span{
+			margin-right:190px;
+		}
+		.list-li1{	margin: 13px 0px;}
+		</style>
+	</head>
+	
+	
+	<body>
+		<!--最外层div-->
+		<div class="content">
+			<div class="top">
+				<a href="#">设置</a>				
+			</div>
+			<div class="div1">
+				<img src="img/info.png"/>
+				<a href="#">立即登陆</a>
+				<strong><span>赢积分&nbsp;抢大礼</span></strong>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="#"><img src="img/read.png" />阅读</a></li>
+					<li><a href="#"><img src="img/save.png" />收藏</a></li>
+					<li><a href="#"><img src="img/write.png" />跟帖</a></li>
+					<li><a href="#"><img src="img/jin.png" />金币</a></li>
+				</ul>
+			</div>
+			<div class="list-btn">
+				<ul>
+					<li class="list-li1"><a href="#"><img src="img/msg.png"/><span>我的消息</span><img  src="img/dayu.png"/></a></li>
+					<li><a href="#"><img src="img/money.png"/><span>我的商城</span><img src="img/dayu.png"/></a></li>
+					<li><a href="#"><img src="img/work.png"/><span>我的任务</span><img src="img/dayu.png"/></a></li>
+					<li><a href="#"><img src="img/bag.png"/><span>我的钱包</span><img  src="img/dayu.png"/></a></li>
+					<li class="list-li1"><a href="#"><img src="img/email.png"/><span>我的邮箱</span><img  src="img/dayu.png"/></a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
