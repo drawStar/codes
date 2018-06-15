@@ -54,15 +54,33 @@ class LList:
                 p.elem, crt.elem = crt.elem, p.elem
                 p=p.next_
             crt=crt.next_
+    def sort2(self):
+        #从小到大插入排序，通过改变链接结点的方式实现
+        last=self._head#last结点之前的已经排好序了
+        crt=last.next_
+        while crt is not None:
+            p=self._head
+            q=None
+            while p is not crt and p.elem<=crt.elem:#继续向前
+                q=p
+                p=p.next_
 
-
+            last.next_=crt.next_#将crt结点取下来
+            if p is self._head:
+                crt.next_=p
+                self._head=crt
+            else:
+                crt.next_=p
+                q.next_=crt
+            crt=last.next_
 
 
     def printAll(self):
         p=self._head
         while p is not None:
-            print p.elem
+            print p.elem,
             p=p.next_
+        print
 
 
 mylist=LList()
@@ -70,7 +88,9 @@ mylist.append(22)
 mylist.append(20)
 mylist.append(7)
 mylist.append(12)
-mylist.sort1()
+mylist.printAll()
+
+mylist.sort2()
 mylist.printAll()
 
 
